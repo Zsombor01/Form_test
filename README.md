@@ -4,6 +4,7 @@ The project has to main components:
   - Company.jsx --> In this component the user can fill out his company's informations (name, email, number of employees, descripiton about the company).
   - employee.jsx --> After the company's data are declared the form will automatically create as many employee forms as the number of employees
     The validation of the given informations are happens with Yup, which is a Form validation library ([Yup](https://github.com/jquense/yup))
+    The validation schemas are written in the Validations directory, and happens in two parts, because the data of the company and the data of the employees will be validated differently.
     I solved the rendering of the employee forms with the use of useState hook.
     If all the given datas are valid the project makes a JSON file from the data of both the user and the company. Which, then could be sent to a backend.
 
